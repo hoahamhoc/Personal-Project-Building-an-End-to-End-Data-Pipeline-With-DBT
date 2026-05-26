@@ -64,7 +64,7 @@ Sử dụng **PySpark** để đọc nhiều file CSV từ dataset Wide World Im
 
 Sử dụng **dbt** (Data Build Tool) để xây dựng data mart phục vụ đội sales, dựa trên kiến trúc **Kimball**.
 
-📄 **Code:** [dim_customer.sql](https://github.com/hoanguyen290120/dbt_sqlserver_project/blob/main/models/analytics/dim_customer.sql)
+📄 **Code:** [code sql](https://github.com/hoahamhoc/Personal-Project-Building-an-End-to-End-Data-Pipeline-With-DBT/tree/main/dbt_sqlserver_project-main)
 
 **Công cụ sử dụng:**
 
