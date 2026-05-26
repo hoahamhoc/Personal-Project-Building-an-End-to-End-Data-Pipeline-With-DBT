@@ -1,0 +1,27 @@
+name: 'template_by_vitlamdata'
+version: '1.0.0'
+config-version: 2
+
+profile: 'template_by_vitlamdata'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+target-path: "target"
+log-path: "logs"
+packages-install-path: "dbt_packages"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  template_by_vitlamdata:
+    +materialized: table
+
+    staging:
+      +schema: dbt_staging         # 👈 Tách schema staging
+      +materialized: view
+
+    analytics:
+      +schema: dbt_sales_data_mart # 👈 Giữ schema phân tích
+      +materialized: table
